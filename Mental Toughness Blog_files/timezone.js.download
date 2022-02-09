@@ -1,0 +1,1 @@
+Infusion("TimeZone",function(){function e(e){var n=jstz.determine(),t=n.name();document.getElementById(e).value=t}function n(n){var t=document.getElementsByName(n);jQuery('<input type="hidden" id="timeZone" name="timeZone" value="" />').prependTo(t[0]),e("timeZone")}var t=Infusion.TimeZone;t.getTimeZone=e,t.getTimeZoneForWebform=n},{js:["/resources/external/jstz/jstz.js"]});

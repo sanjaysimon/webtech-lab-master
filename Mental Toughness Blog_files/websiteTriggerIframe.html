@@ -1,0 +1,23 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0067)https://bl132.infusionsoft.app/app/webTracking/websiteTriggerIframe -->
+<html><link type="text/css" id="dark-mode" rel="stylesheet" href="https://bl132.infusionsoft.app/app/webTracking/websiteTriggerIframe"><style type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Infusionsoft WebsiteTrigger</title>
+    <script type="text/javascript">
+        document.onreadystatechange = function() {
+            if (document.readyState === 'complete') {
+                var contactId = document.querySelector('#contactId').value || 0;
+                var event = {
+                    eventName: 'inf-website-trigger-contact-event',
+                    contactId: contactId
+                };
+
+                window.parent.postMessage(JSON.stringify(event), '*');
+            }
+        };
+    </script>
+<script async="" src="./api.js.download"></script></head>
+<body>
+<input type="hidden" id="contactId" value="">
+<script type="text/javascript">(function(){window['__CF$cv$params']={r:'626ff5f21b402dfe',m:'97731ee0b34cdfbefe77f2ce3ae6353f08310a6d-1614240740-1800-AS0gZ+WF/Ol1GVYCNn8d0OwrpvS25WRgYsxNJk4uwQpjeXU7psYHvzzgQCy9gVwCVOS+HotS3iOkd4NwwXy3F/gSUFrcy9Lhe+ZjGEXh6+Lo7R/bVlFvVOGpAXmNIkNNSuPDne5Mgfj6klmLgSTLg5cHLIgCsTN3tTmDUXpaf2Oi',s:[0x603d28608f,0x636521108f],}})();</script>
+
+</body></html>

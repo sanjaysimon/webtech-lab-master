@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Resume</title>
+</head>
+<body bgcolor="ffeaa7">
+	<center>
+	<canvas id="resume" width="200" height="100">
+	</canvas>
+	<script>
+		var temp = document.getElementById("resume");
+		var content = temp.getContext("2d");
+		content.font = "60px Calibri";
+		content.fillText("Resume",10,50);
+	</script>
+	</center>
+<form action="" method="" name="" enctype="">
+<table border="2" cellspacing="10" callepadding="10" width="50%" align="center">
+<tr>
+<td width="20%">Name</td>
+<td width="30%"><input type="text" id="name" name="name" autofocus placeholder="Enter Name"></td>
+</tr>
+<tr>
+<td width="20%">Date Of Birth</td>
+<td width="30%"><input type="date" max="2020-02-15" min="1947-01-01"></td>
+</tr>
+<tr>
+<td width="20%">Phone Number</td>
+<td width="30%"><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" autofocus placeholder="Enter Phone Number" maxlength="10"</td>
+</tr>
+<tr>
+<td width="20%">Email Id</td>
+<td width="30%"><input type="email" id="email" name="email" autofocus placeholder="Enter your email"></td>
+</tr>
+<tr>
+<td width="20%">Programming Language</td>
+<td width="30%"><input type="checkbox" name="subject" value="C">C
+<input type="checkbox" name="subject" value="C++">C++
+<input type="checkbox" name="subject" value="Java">Java
+<input type="checkbox" name="subject" value="Python">Python
+<input type="checkbox" name="subject" value="R">R</td>
+</tr>
+</form>
+<tr>
+<td width="20%">Audio</td>
+<td width="30%">
+	<audio controls>
+  	<source src="call.mp3" type="audio/mpeg">
+	</audio>
+</td>
+</tr>
+<tr>
+<td width="20%">Video</td>
+<td width="30%">
+	<video width="240px" height="180px" controls poster="idol.jfif">
+		<source src="durga.mp4" type="video/mp4">
+	</video>
+</td>
+</tr>
+<tr>
+<td width="20%">Object Tag</td>
+<td width="30%">
+	 <object height="250" width="500" data="https://www.youtube.com/embed/eANFsC_Y07U"></object>  
+</td>
+</tr>
+<tr>
+<td width="20%">Image Map</td>
+<td width="30%">
+	 <map name="imagemap">
+	 	<area shape="poly" coords="25,14,57,14,78,36,78,65,57,86,25,86,4,65,4,34" href="hex.html" target="_blank"/>
+	 	<area shape="poly" coords="132,6,178,49,132,95,85,49" href="rhombus.html" target="_blank"/>
+	 	<area shape="circle" coords="222,50,39" href="circle.html" target="_blank"/>
+	 </map>
+	 <img src="image.jfif" usemap="#imagemap"/> 
+</td>
+</tr>
+</table>
+<center>
+	<embed type="image/jpg" src="t.jpg" width="350" height="250">
+	</center>
+</body>
+</html>

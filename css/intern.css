@@ -1,0 +1,412 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background: linear-gradient(to right, blue, pink);
+	background-repeat: no-repeat;
+	height: 250vh;
+	align-items: center;
+	position: relative;
+	overflow: auto;
+}
+
+.title{
+	margin: auto;
+	margin-top: 70px;
+	color: white;
+	margin-bottom: 20px;
+	cursor: context-menu;
+}
+
+.title h1{
+	text-align: center;
+	font-size: 50px;
+}
+
+.first ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.first ul li{
+	display: inline-block;
+}
+
+.first ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+.first ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.first{
+	width: 1400px;
+	height: 50px;
+	margin: auto;
+	margin-bottom: 50px;
+}
+.heading p{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-size: 18px;
+	font-weight: 700;
+	cursor: context-menu;
+}
+
+.heading ol{
+	margin-top: 20px;
+	margin-left: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	cursor: context-menu;
+}
+.heading ol li{
+	list-style-type: lower-roman;
+}
+
+.heading p:hover{
+	background: white;
+	color: black;
+}
+
+.heading{
+
+	margin: auto;
+	margin-top: 80px;
+	background: white;
+	opacity: 0.8;
+	width: 900px;
+	padding: 10px 0px 10px 0px;
+  	height: 200px;
+	border-radius: 15px 15px 0px 0px;
+	box-shadow: 0 12px 15px rgba(0, 0, 0, 0.22);
+}
+
+.heading h2{
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	cursor: context-menu;
+}
+
+.heading p:hover{
+	background: pink;
+	color: black;
+}
+
+.heading ol li:hover{
+	background: pink;
+	color: black;
+}
+.apply{
+	margin: auto;
+	margin-top: 10px;
+	background: white;
+	width: 900px;
+	opacity: 0.9;
+  	height: 1050px;
+	border-radius: 0px 0px 15px 15px;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+
+
+.apply form{
+	padding: 10px;
+}
+
+.apply form .name{
+	width: 125px;
+	color: black;
+	font-weight: 600;
+	font-size: 18px;
+	width: 150px;
+	margin-left: 25px;
+	padding-right: 5px;
+}
+
+
+.apply form input{
+	width: auto;
+	font-size: 1.0625rem;
+	font-weight: 500;
+}
+
+.one{
+	margin-top: 50px;
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.one #name{
+	width: 600px;
+}
+
+.one #age{
+	width: 200px;
+	margin-left: 15px;
+}
+
+.one #gender{
+	width:30px;
+}
+
+.two{
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.two #contact{
+	width: 300px;
+}
+
+.two #email{
+	width: 600px;
+}
+
+.four{
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.four #experience{
+	width: 100px;
+}
+
+.four #qualification{
+	width: 300px;
+}
+
+
+
+.five{
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.five #color{
+	width: 50px;
+}
+
+.five #internship{
+	width: 400px;
+	height: 30px;
+	font-size: 15px;
+}
+
+.five #date{
+	width: 200px;
+}
+
+.six{
+	margin-left: 40px;
+	margin-bottom: 50px;
+}
+
+.seven{
+	margin-left: 40px;
+	margin-bottom: 20px;
+}
+
+.seven #time{
+	width: 100px;
+}
+
+.eight{
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.eight #check{
+	margin-left: 30px;
+	width: 20px;
+	cursor: pointer;
+}
+
+.nine{
+	margin-bottom: 20px;
+	margin-left: 40px;
+}
+
+.apply form .nine button:hover{
+	background: linear-gradient(to right, pink, blue);
+}
+
+.apply form .nine button{
+	border-radius: 30px;
+	cursor: pointer;
+	width: 260px;
+	height: 36px;
+	font-size: 15px;
+	display: block;
+	background: linear-gradient(to right, blue, pink);
+	margin: 0 auto;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-family: Century Gothic;
+}
+
+
+.logo img{
+	float: left;
+	width:150px;
+	height: auto;
+	top: 0;
+}
+
+footer{
+	position: relative;
+	bottom: 0px;
+	color: #d9d9d9;
+	width: 100%;
+	background: #111;
+}
+
+.main-content{
+	display: flex;
+}
+
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content{
+	margin: 20px 0 0 0;
+}
+
+.left .content p{
+	text-align: justify;
+}
+
+.left .content .social{
+margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+padding: 0 2px;
+}
+
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s
+}
+
+.left .content .social a span:hover{
+	background: #f12020;
+}
+
+.center .content.fas{
+	font-size: 1.4375rem;
+	background: #1a1a1a;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.center .content .fas:hover{
+	background: #f12020;	
+}
+
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	color: #d9d9d9;
+	padding-left: 10px;
+}
+
+.center .content .phone{
+	margin: 10px 0;
+	color: #d9d9d9;
+}
+
+.right form .text{
+	margin-top: 1.0625rem;
+	margin-bottom: 2px;
+	color: #d9d9d9;
+}
+
+.right form .msg{
+	margin-top: 10px;
+	color: #d9d9d9;
+}
+
+.right form input, .right form textarea{
+	width: 100%;
+	font-family: Century Gothic;
+	font-size: 1.0625rem;
+	background: #151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+	color: #d9d9d9;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+outline-color: #3498db;
+}
+
+.right form input{
+	height: 35px;
+}
+
+.right form .butn{
+	margin-top: 10px;
+}
+
+.right form .butn button{
+	height: 40px;
+	width:100%;
+	border:none;
+	outline: none;
+	background: #f12020;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
+	color: #d9d9d9;
+}
+
+.right form .butn button:hover{
+	background: #000;
+	color: #d9d9d9;
+}
+
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: #151515;	
+}
+
+.bottom center span{
+	color: #fff;	
+}

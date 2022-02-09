@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EXPLORE</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="pic/sports.jfif" rel="icon">
+	<link rel="stylesheet" type="text/css" href="css/more.css">
+</head>
+<body>
+<header>
+	<div class="first">
+		<div class="logo">
+				<img src="pic/dude.png">
+			</div>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="wiki.html" target="_blank">Blog</a></li>
+				<li><a href="contact_page.html" target="_blank">Shop</a></li>
+				<li><a href="extend.html" target="_blank">About</a></li>
+				<li><a href="contact_page.html">Contact</a></li>
+				<li><a href="sign-log.html" target="_blank">Log In/Sign Up</a></li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>Mental Toughness Secrets</h1>
+		</div>
+	<div class="listing">
+		<ul>
+			<li>
+				<map name="imagemap">
+	 			<area shape="rect" coords="111,20,180,490" alt="afraid" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+  <area shape="rect" coords="254,177,321,491" alt="help" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+  <area shape="rect" coords="533,13,604,489" alt="stress" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+  <area shape="rect" coords="672,327,753,651" alt="work" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+  <area shape="rect" coords="461,408,535,651" alt="sad" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+  <area shape="rect" coords="112,411,819,488" alt="depression" href="file:///C:/Users/admin/Desktop/html/sun.jpg">
+	 			</map>
+				<img src="pic/map.png" width="450px" height="450px" usemap="#imagemap">
+			</li>
+			<li>
+				<iframe name="myframe" width="750px" height="450px"></iframe>
+			</li>
+		</ul>
+	</div>
+
+
+	<div class="button">
+			<a href="music.html" class="btn">MUSIC</a>
+			<a href="video.html" class="btn">VIDEO</a>
+			<a href="hangman.html" class="btn">PLAY GAME</a>
+	</div>
+
+	<div class="bonus">
+		<h2>AREN'T YOU SURPRISED YET? </h2>
+		<img id="sport" src="pic/stop.png" alt="Motivation" width="0" height="0">
+		<img id="sport1" src="pic/think.jfif" alt="Motivation" width="0" height="0">
+		<img id="sport2" src="pic/act.png" alt="Motivation" width="0" height="0">
+		<img id="sport3" src="pic/canvas.jpg" alt="Motivation" width="0" height="0">
+		<canvas id="myCanvas" width="300" height="250"></canvas>
+		<canvas id="myCanvas1" width="300" height="250"></canvas>
+		<canvas id="myCanvas2" width="300" height="250"></canvas>
+		<canvas id="myCanvas3" width="300" height="250"></canvas>
+		<p><button onclick="location.href='video.html'">Boost Motivation!</button><button onclick="location.href='product.html'">Product Catalgue</button></p>
+		<h2 id="xml">Active Members and Shoppers</h2>
+		<p><button onclick="loadXMLDoc()">Members!</button>
+		<button onclick="loadShoppers()">Shoppers!</button>
+		</p>
+
+		<table id="demo" border="1">
+			<tr><th>ID</th><th>Member</th><th>Points</th><th>Heirarchy</th></tr>
+		</table>
+		<script>
+		function myCanvas() {
+  			var c = document.getElementById("myCanvas");
+  			var ctx = c.getContext("2d");
+  			var img = document.getElementById("sport");
+  			ctx.drawImage(img,10,10);
+
+  			var c1 = document.getElementById("myCanvas1");
+  			var ctx1 = c1.getContext("2d");
+  			var img1 = document.getElementById("sport1");
+  			ctx1.drawImage(img1,10,10);
+
+  			var c2 = document.getElementById("myCanvas2");
+  			var ctx2 = c2.getContext("2d");
+  			var img2 = document.getElementById("sport2");
+  			ctx2.drawImage(img2,10,10);
+
+  			var c3 = document.getElementById("myCanvas3");
+  			var ctx3 = c3.getContext("2d");
+  			var img3 = document.getElementById("sport3");
+  			ctx3.drawImage(img3,10,10);
+			}
+		function loadXMLDoc(){
+			file = "https://kajal-0101.github.io/webtech-lab/blog.xml"
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange = function(){
+				if(this.readyState == 4 && this.status == 200){
+					myFunction(this);
+				}
+			};
+			xmlhttp.open("GET", file, true);
+			xmlhttp.send();
+			}
+		function myFunction(xml){
+				var x, i, xmlDoc, table;
+				xmlDoc = xml.responseXML;
+				table = "<tr><th>ID</th><th>Member</th><th>Points</th><th>Heirarchy</th></tr>";
+				x = xmlDoc.getElementsByTagName("member")
+				for (i=0; i< x.length; i++){
+					table += "<tr><td>" + 
+					x[i].getElementsByTagName("userid")[0].childNodes[0].nodeValue + "</td><td>" + 
+					x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue + "</td><td>" +
+					x[i].getElementsByTagName("points")[0].childNodes[0].nodeValue + "</td><td>" +
+					x[i].getElementsByTagName("hierarchy")[0].childNodes[0].nodeValue + "</td></tr>" ;
+
+				}
+				document.getElementById("demo").innerHTML = table;
+			}
+		function loadShoppers(){
+			if (confirm("Do you want to save changes?") == true) {
+			window.location.replace("shopper.xml")
+			} else {
+			alert("Page not replaced!")
+			}
+			
+			}
+		</script>	
+	</div>
+</header>
+<footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2>About Us</h2>
+				<div class="content">
+					<p>
+						100 Mental Toughness Secrets of the World Class, identifies and 
+explains the thought processes, habits, and philosophies of the world's 
+greatest performers. It gives you action steps so you can implement 
+these secrets immediately and get what you want. 
+
+After 20 years of interviewing, coaching and competing against 
+world-class performers, Steve Seibold has broken down their secrets 
+into mini-modules that are easy to read and simple to understand.
+					</p>
+					<div class="social">
+						<a href="2.html"><span class="fab fa-facebook"></span></a>
+						<a href="2.html"><span class="fab fa-twitter"></span></a>
+						<a href="2.html"><span class="fab fa-instagram"></span></a>
+						<a href="2.html"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Address</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Bengaluru, E-city, INDIA</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">+91 79 770 771 93</span>
+					</div>
+					<div class="email">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">magimai.simon@cs.christuniversity.in</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Contact Us</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Message *</div>
+							<textarea name="name" rows="2" cols="25" required></textarea>
+						</div>
+						<div class="butn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created by Magimai Sanjay Simon | @Mental Toughness</span>
+				<span class="far fa-copyright"></span>
+				<span> 2020 All rights reserved.</span>
+			</center>
+		</div>
+	</footer>
+</body>
+</html>

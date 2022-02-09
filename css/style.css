@@ -1,0 +1,382 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../background/1.jpg);
+	background-size: cover;
+	height:100vh;
+	background-position: center;
+	animation: slide 20s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes slide{
+	0%, 100%{
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../background/8.jpg);
+	}
+	25%{
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../background/1.jpg);
+	}
+
+	50%{
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../background/6.jpg);
+	}
+
+	75%{
+		background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../background/7.jpg);
+	}
+
+}
+
+.main ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.main ul li{
+	display: inline-block;
+}
+
+.main ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+.main ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.main ul li.active a{
+	background-color: #fff;
+	color: #000;
+}
+
+.logo img{
+	float: left;
+	width:150px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top:40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 70px;
+}
+
+.button{
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.para{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.para p{
+	color: #fff;
+	font-size: 15px;
+}
+
+.para p:hover{
+	background: white;
+	color: black;
+}
+
+#sidebar{
+	position: absolute;
+	width: 400px;
+	height: 100%;
+	background:#151719;
+	left: -400px;
+	transition: all 500ms linear;
+}
+
+#sidebar.active{
+	left:0px;
+}
+
+#sidebar ul li{
+	color: rgba(230, 230, 230, 0.9);
+	list-style: none;
+	padding: 15px 10px;
+	border-bottom: 1px solid #ecf0f1;
+}
+
+#sidebar ul li:hover{
+	background: white;
+	color: black;
+	border: 1px solid black;
+}
+
+#sidebar ul li a{
+	text-decoration: none;
+	color: white;
+}
+
+#sidebar ul li a:visited{
+	color: white;
+}
+
+#sidebar ul li a:hover{
+	background: white;
+	color: black;
+}
+
+#sidebar ul li a:active{
+	background: black;
+	color: white;
+}
+
+#sidebar ul li:hover a{
+	background: white;
+	color: black;
+}
+#sidebar .toggle-btn{
+	position: absolute;
+	left: 430px;
+	top: 20px;
+}
+
+#sidebar .toggle-btn span{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background: #fff;
+	margin: 5px 0px;
+	left: -400px;
+}
+
+#sidebar .location iframe{
+	border: 3px solid black;
+	margin-top: 10px;
+	margin-left: 10px;
+	align-items: center;
+	justify-content: center;
+	width: 250;
+	height:300;
+}
+
+#sidebar .write{
+	margin-top: 15px;
+	color: white;
+}
+
+#sidebar .toggle-btn span:hover{
+	width:35px;
+	height: 7px;
+	border: 1px solid black;
+	background: white;
+}
+
+#sidebar .check{
+	border-bottom: 1px solid #ecf0f1;
+	margin-top: 15px;
+	color:white;
+}
+
+#sidebar .check:hover{
+	background: white;
+	color: black;
+}
+
+#sidebar .check p{
+	padding: 5px;
+}
+
+#sidebar .check button{
+	margin-left: 15px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	background: white;
+	color: black;
+	width: 170px;
+	height: 50px;
+}
+
+#sidebar .check button:hover{
+	background: red;
+	color: white; 
+}
+
+footer{
+	position: relative;
+	bottom: 0px;
+	color: #d9d9d9;
+	width: 100%;
+	background: #111;
+}
+
+.main-content{
+	display: flex;
+}
+
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content{
+	margin: 20px 0 0 0;
+}
+
+.left .content p{
+	text-align: justify;
+}
+
+.left .content .social{
+margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+padding: 0 2px;
+}
+
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s
+}
+
+.left .content .social a span:hover{
+	background: #f12020;
+}
+
+.center .content.fas{
+	font-size: 1.4375rem;
+	background: #1a1a1a;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.center .content .fas:hover{
+	background: #f12020;	
+}
+
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	color: #d9d9d9;
+	padding-left: 10px;
+}
+
+.center .content .phone{
+	margin: 10px 0;
+	color: #d9d9d9;
+}
+
+.right form .text{
+	margin-top: 1.0625rem;
+	margin-bottom: 2px;
+	color: #d9d9d9;
+}
+
+.right form .msg{
+	margin-top: 10px;
+	color: #d9d9d9;
+}
+
+.right form input, .right form textarea{
+	width: 100%;
+	font-family: Century Gothic;
+	font-size: 1.0625rem;
+	background: #151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+	color: #d9d9d9;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+outline-color: #3498db;
+}
+
+.right form input{
+	height: 35px;
+}
+
+.right form .butn{
+	margin-top: 10px;
+}
+
+.right form .butn button{
+	height: 40px;
+	width:100%;
+	border:none;
+	outline: none;
+	background: #f12020;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
+	color: #d9d9d9;
+}
+
+.right form .butn button:hover{
+	background: #000;
+	color: #d9d9d9;
+}
+
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: #151515;	
+}
+
+.bottom center span{
+	color: #fff;	
+}

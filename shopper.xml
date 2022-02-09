@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE merchandise SYSTEM "MerchandiseDetails.dtd"> -->
+<?xml-stylesheet type = "text/xsl" href = "shopper.xsl"?>
+<merchandise xmlns:xlink="http://www.w3.org/1999/xlink">
+	<order id="1">
+		<userid membership="platinium">SW101</userid>
+		<name>Sankalan</name>
+		<city>Banaglore</city>
+		<state>Karnataka</state>
+		<sport>Gym</sport>
+		<gear>Personal</gear>
+		<item>Personalised Dumbell</item>
+		<quantity>8</quantity>
+		<active_score>4.5</active_score>
+		<orderdate>02-08-2020</orderdate>
+		<payment>UPI</payment>
+	</order>
+
+	<order id="2">
+		<userid membership="silver">SW102</userid>
+		<name>Shatavisa</name>
+		<city>Kolkata</city>
+		<state>West Bengal</state>
+		<sport>Basketball</sport>
+		<gear>Team</gear>
+		<item>Sippers</item>
+		<quantity>11</quantity>
+		<active_score>2.8</active_score>
+		<orderdate>06-08-2020</orderdate>
+		<payment>Debit Card</payment>
+	</order>
+
+	<order id="3">
+		<userid membership="gold">SW103</userid>
+		<name>Navendu</name>
+		<city>New Delhi</city>
+		<state>NCT Delhi</state>
+		<sport>Swimming</sport>
+		<gear>Personal</gear>
+		<item>Personalised Cap</item>
+		<quantity>1</quantity>
+		<active_score>4.3</active_score>
+		<orderdate>09-08-2020</orderdate>
+		<payment>Debit Card</payment>
+	</order>
+
+	<order id="4">
+		<userid membership="gold">SW104</userid>
+		<name>Subhadeep</name>
+		<city>Kolkata</city>
+		<state>West Bengal</state>
+		<sport>Mountaineering</sport>
+		<gear>Personal</gear>
+		<item>Rucksack</item>
+		<quantity>1</quantity>
+		<active_score>3.9</active_score>
+		<orderdate>10-08-2020</orderdate>
+		<payment>UPI</payment>
+	</order>
+
+	<order id="5">
+		<userid membership="platinium">SW105</userid>
+		<name>Kaustab</name>
+		<city>Kolkata</city>
+		<state>West Bengal</state>
+		<sport>Biking</sport>
+		<gear>Personal</gear>
+		<item>Personalised Jacket</item>
+		<quantity>1</quantity>
+		<active_score>4.2</active_score>
+		<orderdate>12-08-2020</orderdate>
+		<payment>UPI</payment>
+	</order>
+
+	<order id="6">
+		<userid membership="platinium">SW106</userid>
+		<name>Sayan</name>
+		<city>Burdwan</city>
+		<state>West Bengal</state>
+		<sport>Golf</sport>
+		<gear>Personal</gear>
+		<item>Personalised Jersey</item>
+		<quantity>1</quantity>
+		<active_score>3.7</active_score>
+		<orderdate>13-08-2020</orderdate>
+		<payment>Debit Card</payment>
+	</order>
+
+	<order id="7">
+		<userid membership="platinium">SW107</userid>
+		<name>Debolina</name>
+		<city>Kolkata</city>
+		<state>West Bengal</state>
+		<sport>Karate</sport>
+		<gear>Personal</gear>
+		<item>Head Band</item>
+		<quantity>1</quantity>
+		<active_score>2.9</active_score>
+		<orderdate>14-08-2020</orderdate>
+		<payment>UPI</payment>
+	</order>
+
+	<order id="8">
+		<userid membership="platinium">SW108</userid>
+		<name>Pallabi</name>
+		<city>Chennai</city>
+		<state>Tamil Nadu</state>
+		<sport>Aerobics</sport>
+		<gear>Team</gear>
+		<item>Personalised Costume</item>
+		<quantity>1</quantity>
+		<active_score>4.6</active_score>
+		<orderdate>15-08-2020</orderdate>
+		<payment>Debit Card</payment>
+	</order>
+
+</merchandise>
+

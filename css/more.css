@@ -1,0 +1,357 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+	color: white;
+}
+
+header{
+	background: linear-gradient(to right, #f368e0, #54a0ff, #341f97);
+	height: 250vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+
+.first ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+}
+
+.first ul li{
+	display: inline-block;
+}
+
+.first ul li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+
+.first ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.first{
+	max-width: 1200px;
+	margin-top: 10px;
+	margin: auto;
+}
+
+.title{
+	position: absolute;
+	top: 6%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.title h1{
+	color: #fff;
+	font-size: 40px;
+}
+
+.logo img{
+	float: left;
+	width:150px;
+	height: auto;
+	top: 0;
+}
+
+.listing{
+	position: relative;
+	margin: auto;
+	align-items: center;
+	margin-left: 125px;
+	top: 3%;
+}
+
+.listing ul{
+	float: left;
+	list-style-type: none;
+}
+
+.listing ul li{
+	display: inline-block;
+	padding: 15px 20px;
+	border: 1px solid transparent;
+}
+
+.button{
+	position: absolute;
+	top: 37%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+
+.bonus{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	border-top: 1px dashed white;
+	box-sizing: border-box;
+}
+
+.bonus h2{
+	text-decoration: underline;
+	margin-top: 15px;
+	margin-left: 25px;
+}
+
+.bonus #myCanvas{
+	border-radius: 15px 15px 15px 15px;
+	border: 1px dashed white;
+	margin-left: 60px;
+	margin-top: 10px;
+	text-align: center;
+	margin-right: 10px;
+	justify-content: center;
+}
+
+.bonus #myCanvas1{
+	border-radius: 15px 15px 15px 15px;
+	border: 1px dashed white;
+	margin-left: 60px;
+	margin-top: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+.bonus #myCanvas2{
+	border-radius: 15px 15px 15px 15px;
+	border: 1px dashed white;
+	margin-left: 60px;
+	margin-top: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+.bonus #myCanvas3{
+	border-radius: 15px 15px 15px 15px;
+	border: 1px dashed white;
+	margin-left: 60px;
+	margin-top: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+.bonus p{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.bonus p button{
+	margin-left: 65px;
+	width: 200px;
+	height: 100%;
+	background-color: purple;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	border: 15px 15px 15px 15px;
+}
+
+.bonus p button:hover{
+	background-color: white;
+	color: purple;
+	width: 210px;
+}
+
+.bonus h2 #xml{
+	margin-top: 40px;
+	left: 50%;
+}
+
+.bonus table{
+	position: absolute;
+	width: 1000px;
+	margin-top: 20px;
+	margin-left: 250px;
+	border-radius: 5px;
+	background: #9b59b6;
+	padding: 5px;
+}
+
+.bonus th{
+	font-size: 16px;
+}
+
+.bonus td{
+	background: #fff;
+	padding: 3px 3px 3px 6px;
+	color: black;
+	border-radius: 5px;
+	font-size: 14px;
+	text-align: center;
+}
+
+
+
+.bonus td:hover{
+	background: #e056fd;
+	color:white;
+}
+
+
+
+footer{
+	position: relative;
+	bottom: 0px;
+	color: #d9d9d9;
+	width: 100%;
+	background: #111;
+}
+
+.main-content{
+	display: flex;
+}
+
+.main-content .box{
+	flex-basis: 50%;
+	padding: 10px 20px;
+}
+
+.box h2{
+	font-size: 1.125rem;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+
+.box .content{
+	margin: 20px 0 0 0;
+}
+
+.left .content p{
+	text-align: justify;
+}
+
+.left .content .social{
+margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+padding: 0 2px;
+}
+
+.left .content .social a span{
+	height: 40px;
+	width: 40px;
+	background: #1a1a1a;
+	line-height: 40px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 5px;
+	transition: 0.3s
+}
+
+.left .content .social a span:hover{
+	background: #f12020;
+}
+
+.center .content.fas{
+	font-size: 1.4375rem;
+	background: #1a1a1a;
+	height: 45px;
+	width: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 50%;
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+.center .content .fas:hover{
+	background: #f12020;	
+}
+
+.center .content .text{
+	font-size: 1.0625rem;
+	font-weight: 500;
+	color: #d9d9d9;
+	padding-left: 10px;
+}
+
+.center .content .phone{
+	margin: 10px 0;
+	color: #d9d9d9;
+}
+
+.right form .text{
+	margin-top: 1.0625rem;
+	margin-bottom: 2px;
+	color: #d9d9d9;
+}
+
+.right form .msg{
+	margin-top: 10px;
+	color: #d9d9d9;
+}
+
+.right form input, .right form textarea{
+	width: 100%;
+	font-family: Century Gothic;
+	font-size: 1.0625rem;
+	background: #151515;
+	padding-left: 10px;
+	border: 1px solid #222222;
+	color: #d9d9d9;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+outline-color: #3498db;
+}
+
+.right form input{
+	height: 35px;
+}
+
+.right form .butn{
+	margin-top: 10px;
+}
+
+.right form .butn button{
+	height: 40px;
+	width:100%;
+	border:none;
+	outline: none;
+	background: #f12020;
+	font-size: 1.0625rem;
+	font-weight: 500;
+	text-align: center;
+	cursor: pointer;
+	transition: .3s;
+	color: #d9d9d9;
+}
+
+.right form .butn button:hover{
+	background: #000;
+	color: #d9d9d9;
+}
+
+.bottom center{
+	padding: 5px;
+	font-size: 0.9375rem;
+	background: #151515;	
+}
+
+.bottom center span{
+	color: #fff;	
+}

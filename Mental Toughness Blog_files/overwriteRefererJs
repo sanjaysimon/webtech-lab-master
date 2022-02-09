@@ -1,0 +1,4 @@
+var link = document.createElement('meta');
+link.setAttribute('name', 'referrer');
+link.setAttribute('content', 'no-referrer-when-downgrade');
+document.getElementsByTagName('head')[0].appendChild(link);

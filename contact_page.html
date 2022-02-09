@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width",initial-scale=1.0>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<link href="pic/sports.jfif" rel="icon">
+	<title>CONTACT US</title>
+	<link rel = "stylesheet" href = "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js">
+    </script>
+ 
+    <script>
+    	// datepicker
+        $(function() {
+            $( "#datepicker" ).datepicker({ dateFormat: 'dd-mm-yy' });
+        });
+
+        // autocomplete
+      	$(function() {
+            var availableTags = [
+               "Business",
+               "Endorsement",
+               "Advertisement",
+               "Career",
+               "Internship",
+               "Blogging",
+               "Magazine",
+               "Sportsmeet",
+               "Product",
+               "Collaborator"
+            ];	
+            $( "#subject" ).autocomplete({
+               source: availableTags
+            });	
+         });
+
+      	// tooltip
+        $(function() {
+            $( document ).tooltip();
+        });
+    
+    	// select menu
+        $(function() {
+            $("#query").selectmenu();});
+    
+    	// button action
+		$(document).ready(function(){
+  			$(".btn-one").click(function(){
+    		$("#subject").change(alert("You chose the subject: " +$('#subject').get(0).value));
+  			});
+		});
+	
+		// on focus and on blur event
+		$(document).ready(function(){
+  			$("#msg").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#msg").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+
+		// on focus and on blur event
+		$(document).ready(function(){
+  			$("#name").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#name").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+
+		//on focus and on blur event
+		$(document).ready(function(){
+  			$("#phone").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#phone").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+
+		// on focus and on blur event
+		$(document).ready(function(){
+  			$("#email").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#email").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+
+		//on focus and on blur event
+		$(document).ready(function(){
+  			$("#subject").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#subject").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+
+		//on focus and on blur event
+		$(document).ready(function(){
+  			$("#date").focus(function(){
+    		$(this).css("background-color", "#cccccc");
+  			});
+  		$("#date").blur(function(){
+    		$(this).css("background-color", "#dff9fb");
+  			});
+		});
+	
+		// hover
+		$(document).ready(function(){
+    	$("p").hover(function(){
+        	$(this).addClass("highlight");
+    	}, function(){
+        	$(this).removeClass("highlight");
+    		});
+		});
+
+		// double click event
+		$(document).ready(function(){
+    		$("#a").dblclick(function(){
+        	$(this).slideUp();
+    		});
+		});
+	
+		// on key press
+		$(document).ready(function(){
+    	var i = 0;
+    		$("#msg").keypress(function(){
+        	$("#count").text(i += 1);
+      		});
+      	});
+	
+		// fade toggle
+		$(document).ready(function(){
+			$("#fade-toggle").click(function(){
+				$("#pic1").fadeToggle();
+				$("#pic2").fadeToggle("Slow");
+				$("#pic3").fadeToggle(2000);
+			});
+		});
+
+		// toggle
+		$(document).ready(function(){
+			$("#toggle").click(function(){
+				$("#pic4").toggle("fast");
+				$("#pic5").toggle("Slow");
+				$("#pic6").toggle(50);
+			});
+		});
+	</script>
+</head>
+<body>
+	<header>
+		<div class="first">
+		<div class="logo">
+				<img src="pic/dude.png">
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="wiki.html" target="_blank">Blog</a></li>
+				<li><a href="contact_page.html" target="_blank">Shop</a></li>
+				<li><a href="extend.html" target="_blank">About</a></li>
+				<li><a href="contact_page.html">Contact</a></li>
+			<li><a href="internship.html" target="_blank">Internship</a></li>
+			<li><a href="sign-log.html" target="_blank">Log In/Sign Up</a></li>
+		</ul>
+	</div>
+
+	<div class="title">
+		<h1>Stop and Shop</h1>
+	</div>
+
+	<div class="marquee">
+		<p>ADVERTISEMENT **25% off on Books and Products**</p>
+	</div>
+
+	<div class="contain">
+		<h1> Connect with OUR  own Mental Toughness Team</h1>
+		<p>We would love to know more about your queries.<br>Feel free to write AND contact us.</p>
+		<div class="contact-box">
+			<div class="contact-left">
+				<h3>Send your request</h3>
+				<form id="up">
+					<div class="input-row">
+						<div class="input-group">
+							<label>Name</label>
+							<input type="text" id="name" name="full name" placeholder="Enter your name">
+						</div>
+						<div class="input-group">
+							<label>Phone</label>
+							<input type="phone" name="phone" id="phone" placeholder="Enter your phone number">
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-group">
+							<label>Email</label>
+							<input type="email" name="email" placeholder="Enter your email">
+						</div>
+						<div class="input-group">
+							<label>Subject</label>
+							<input type="text" id="subject" name="subject" placeholder="Enter the subject">
+						</div>
+					</div>
+					<div class="input-row">
+						<div class="input-group">
+							<label>Date</label>
+							<input type="text" id="datepicker" name="date" placeholder="Enter Date">
+						</div>
+						<div class="input-group">
+							<label>Querier Identity</label>
+							<select name = "querier identity" id = "query">
+                  				<option>Guest</option>
+                  				<option>Member</option>
+               				</select>
+						</div>
+					</div>
+					<label>Message</label>
+					<textarea row="5" placeholder="Enter your message" name="message area" id="msg"></textarea>
+					<p>Alphabets typed: <span id="count">0</span></p>
+					<button type="submit" class="btn-one">Dodge Off</button>
+				</form>
+			</div>
+			<div class="contact-right">
+				<h3>SALE-SALE-SALE-SALE-SALE-SALE-SALE-SALE</h3>
+				<p> Check our <a href="product.html" title="Product page">products</a></p>
+				<div class="ad">
+					<p id="a">use the code SANJAY786 to get EXTRA **5% off</p>
+				</div>
+				<div class = "f1">
+					<button id="fade-toggle">Hide/Show Advertisement</button><br>
+					<img src = "pic/cosco.jpg" width="100" height="100" id="pic1"/>
+					<img src = "pic/gloves.jpeg" width="100" height="100" id="pic2"/>
+					<img src = "pic/adidas.jpg" width="100" height="100" id="pic3"/>
+				</div>
+
+				<div class = "f2">
+					<button id="toggle">Hide/Show Advertisement</button><br>
+					<img src = "pic/badminton.jpg" width="100" height="100" id="pic4"/>
+					<img src = "pic/basketball.jpg" width="100" height="100" id="pic5"/>
+					<img src = "pic/bat.jpg" width="100" height="100" id="pic6"/>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+
+	</header>
+	<footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2>About Us</h2>
+				<div class="content">
+					<p>
+						100 Mental Toughness Secrets of the World Class, identifies and 
+explains the thought processes, habits, and philosophies of the world's 
+greatest performers. It gives you action steps so you can implement 
+these secrets immediately and get what you want. 
+
+After 20 years of interviewing, coaching and competing against 
+world-class performers, Steve Seibold has broken down their secrets 
+into mini-modules that are easy to read and simple to understand.
+					</p>
+					<div class="social">
+						<a href="2.html"><span class="fab fa-facebook"></span></a>
+						<a href="2.html"><span class="fab fa-twitter"></span></a>
+						<a href="2.html"><span class="fab fa-instagram"></span></a>
+						<a href="2.html"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Address</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Bengaluru, E-city, INDIA</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">+91 79 770 771 93</span>
+					</div>
+					<div class="email">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">magimai.simon@cs.christuniversity.in</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Contact Us</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Message *</div>
+							<textarea name="name" rows="2" cols="25" required></textarea>
+						</div>
+						<div class="butn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created by Magimai Sanjay Simon | @Mental Toughness</span>
+				<span class="far fa-copyright"></span>
+				<span> 2020 All rights reserved.</span>
+			</center>
+		</div>
+	</footer>
+<script>
+		// get ans set element from form
+		$(document).ready(function(){
+    		$(".btn-one").click(function(){
+        	var str = " , thank you for your query, we will get back to you!"
+        	var name = $('#name').get(0).value;
+        	var res = name.concat(str);
+        	alert(res);
+    		});
+    	});
+
+		// serialize
+		$(".btn-one").click(function(){
+  			var res = $("#up").serialize();
+  			//console.log("Serialize Results:\n" +res);
+  			alert("Serialize Results:\n" +res);
+		});
+
+		// serialize array
+		$(".btn-one").click(function(){
+  			var x = $("#up").serializeArray();
+  			var results = "";
+  			$.each(x, function(i, field){
+    			results += "\n" + field.name + " : " + field.value + " ";
+  			});
+  			console.log("Serialized Array\n" +results);
+  			alert("Full details:\n" +results);
+		});
+</script>
+</body>
+</html>
