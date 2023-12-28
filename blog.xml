@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE blog SYSTEM "blog.dtd"> 
+<blog>
+	<members>
+	<member id="2">
+		<userid>SW011</userid>
+		<name>Nishi</name>
+		<points>5</points>
+		<hierarchy>Silver</hierarchy>
+	</member>
+
+	<member id="3">
+		<userid>SW007</userid>
+		<name>Sarika</name>
+		<points>7</points>
+		<hierarchy>Gold</hierarchy>
+	</member>
+
+	<member id="4">
+		<userid>SW019</userid>
+		<name>Sashank</name>
+		<points>8</points>
+		<hierarchy>Gold</hierarchy>
+	</member>
+
+	<member id="5">
+		<userid>SW0028</userid>
+		<name>Pinto</name>
+		<points>8</points>
+		<hierarchy>Gold</hierarchy>
+	</member>
+
+
+	<member id="1">
+		<userid>SW003</userid>
+		<name>Sanjay</name>
+		<points>8</points>
+		<hierarchy>Gold</hierarchy>
+	</member>
+
+	<member id="6">
+		<userid>SW023</userid>
+		<name>Sudeshna</name>
+		<points>9</points>
+		<hierarchy>Platinium</hierarchy>
+	</member>
+</members>
+</blog>

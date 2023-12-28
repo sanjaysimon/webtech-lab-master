@@ -1,0 +1,125 @@
+<!-- MEAN is a free and open-source JavaScript software for building dynamic web sites and web applications. The MEAN stack is MongoDB, Express.js, Angular and Node.js -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hangman App</title>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link href="pic/sports.jfif" rel="icon">
+	<link rel="stylesheet" type="text/css" href="css/hangman.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body ng-app="HangmanApp" ng-controller="GameController">
+<header>
+	<div class="first">
+		<div class="logo">
+				<img src="pic/dude.png">
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="wiki.html" target="_blank">Blog</a></li>
+				<li><a href="contact_page.html" target="_blank">Shop</a></li>
+				<li><a href="extend.html" target="_blank">About</a></li>
+			<li><a href="contact_page.html">Contact</a></li>
+			<li><a href="sign-log.html" target="_blank">Log In/Sign Up</a></li>
+		</ul>
+	</div>
+
+	<div class="title">
+		<h1>Sports World</h1>
+	</div>
+
+	<div class="marquee">
+		<p>Stay Home, Stay Safe and Enjoy!</p>
+	</div>
+	<div class="apply">
+		<div class="left">
+			<p class="text"><span class="fas fa-hourglass"></span>Guesses Left: {{guesses}}</p>
+		</div>
+			
+		<div class="incorrect">
+			<p class="text"><span class="fas fa-times-circle"></span>Your incorrect Guesses :: <span ng-repeat="letter in incorrectLettersChosen">{{letter}}</span></p>
+		</div>
+		<div class="correct">
+			<p class="text"><span class="fas fa-check-circle"></span>Your correct Guesses :: <span ng-repeat="letter in correctLettersChosen">{{letter}}</span></p>
+		</div>
+
+		<div class="guess"><p class="text"><span class="fas fa-search"></span>You have to guess: {{displayWord}}</p></div>
+		<div>
+			<div class="form">
+				<input type="text" name="guess" placeholder="Enter your guess" ng-model="input.letter">
+				<button ng-click="letterChosen()">Submit</button>
+			</div>
+		</div>
+	</div>
+</header>
+	<footer>
+		<div class="main-content">
+			<div class="left box">
+				<h2>About Us</h2>
+				<div class="content">
+					<p>
+						100 Mental Toughness Secrets of the World Class, identifies and 
+explains the thought processes, habits, and philosophies of the world's 
+greatest performers. It gives you action steps so you can implement 
+these secrets immediately and get what you want. 
+
+After 20 years of interviewing, coaching and competing against 
+world-class performers, Steve Seibold has broken down their secrets 
+into mini-modules that are easy to read and simple to understand.
+					</p>
+					<div class="social">
+						<a href="2.html"><span class="fab fa-facebook"></span></a>
+						<a href="2.html"><span class="fab fa-twitter"></span></a>
+						<a href="2.html"><span class="fab fa-instagram"></span></a>
+						<a href="2.html"><span class="fab fa-youtube"></span></a>
+					</div>
+				</div>
+			</div>
+			<div class="center box">
+				<h2>Address</h2>
+				<div class="content">
+					<div class="place">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">Bengaluru, E-city, INDIA</span>
+					</div>
+					<div class="phone">
+						<span class="fas fa-phone-alt"></span>
+						<span class="text">+91 79 770 771 93</span>
+					</div>
+					<div class="email">
+						<span class="fas fa-map-marker-alt"></span>
+						<span class="text">magimai.simon@cs.christuniversity.in</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="right box">
+				<h2>Contact Us</h2>
+				<div class="content">
+					<form action="#">
+						<div class="email">
+							<div class="text">Email *</div>
+							<input type="email" required>
+						</div>
+						<div class="msg">
+							<div class="text">Message *</div>
+							<textarea name="name" rows="2" cols="25" required></textarea>
+						</div>
+						<div class="butn">
+							<button type="submit">Send</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="bottom">
+			<center>
+				<span class="credit">Created by Magimai Sanjay Simon | @Mental Toughness</span>
+				<span class="far fa-copyright"></span>
+				<span> 2020 All rights reserved.</span>
+			</center>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<!DOCTYPE blog
+[
+<!ELEMENT members(member) *>
+<!ELEMENT member (userid, name, points,hierarchy)>
+<!ELEMENT userid (#PCDATA)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT points (#PCDATA)>
+<!ELEMENT hierarchy (#PCDATA)>
+]>
